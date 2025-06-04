@@ -1,54 +1,69 @@
 import React from "react";
 import "./landingPage.css";
 import Card from "../components/card";
-import Button from "../components/Button";
-
 const LandingPage = () => {
   return (
     <div>
-      <section class="navBar py-3">
+      <section>
         <div className="container">
-          <div className="row">
-            <div className="col">
-              <h3 className="text-light">SWEET</h3>
-            </div>
-            <div className="col d-none d-md-block">
-              <div className="row d-flex">
-                <a href="/" className="col-3 text-light text-center">Overview</a>
-                <a href="/" className="col-3 text-light text-center">Latest</a>
-                <a href="/" className="col-3 text-light text-center">Support</a>
-                <a href="/" className="col-3 text-light text-center">About</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="py-5">
-        <div className="container">
-          <div className="row">
+          <div className="row py-5">
             <div className="col">
               <Card>
-                <div className="row my-3">
-                  <h3>Welcome to my Build Lab </h3>
-                </div>
                 <div className="row">
-                  <p>
-                    a product-minded developer who crafts practical tools with
-                    code and AI.
-                  </p>
-                </div>
-                <div className="row">
-                  <p>
-                    Here, I don't just experiment — I ship. Whether it's a
-                    resume generator for job seekers or automation tools for
-                    digital earners, I build apps that deliver value from day
-                    one.
-                  </p>
-                </div>
-                <div className="row pt-4">
-                    <div className="col d-flex flex-row-reverse">
-                        <Button><p className="text-light">Start</p></Button>
+                  <div className="col-12 col-lg-8">
+                    <div className="row">
+                      <h2 className="fw-bold">Welcome to my Build Lab</h2>
                     </div>
+                    <div className="row">
+                      <p class="my-2 fs-5 fw-bold text-secondary">
+                        a product-minded developer who crafts practical tools
+                        with code and AI.
+                      </p>
+                    </div>
+                    <div className="row">
+                      <p className="fs-5 text-secondary">
+                        Here, I don't just experiment — I ship. Whether it's a
+                        resume generator for job seekers or automation tools for
+                        digital earners, I build apps that deliver value from
+                        day one.
+                      </p>
+                    </div>
+                    <div className="row my-3 flex-row-reverse">
+                      <div className="col-2">
+                        <button className="btn btn-dark">Subscribe</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12 mt-4 mt-lg-0 col-lg-4">
+                    <div className="row">
+                      <h3>What do i do?</h3>
+                    </div>
+                    <div className="row my-3">
+                      <div className="col-12">
+                        <span className="text-secondary">
+                          AI-Powered Web Apps – React-based tools infused with
+                          GPT intelligence
+                        </span>
+                      </div>
+                      <div className="col-12">
+                        <span className="text-secondary">
+                          Automation Projects – Tools that save time, earn
+                          passively, or both
+                        </span>
+                      </div>
+                      <div className="col-12">
+                        <span className="text-secondary">
+                          Frontend Engineering – Clean UI. Fast UX. Scalable
+                          code
+                        </span>
+                      </div>
+                      <div className="col-12">
+                        <span className="text-secondary">
+                          Minimal Design, Maximum Functionality
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </Card>
             </div>
@@ -59,16 +74,33 @@ const LandingPage = () => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h4>Recent Works</h4>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-4">
-              <Card>
-                <div className="row">
-                  <Card />
+              <div className="row my-2">
+                <h3>Recent Works</h3>
+              </div>
+              <div className="row">
+                <div className="col-12 col-md-4">
+                  <Card>
+                    <img className="subCard" src="3./resources/imga.jpg" alt="" />
+                    <div className="row">
+                      <h5>MoodPlay</h5>
+                      <p className="text-secondary">Get Spotify songs based on your mood within a second using ai</p>
+                    </div>
+                    <div className="row">
+                      <button className="btn btn-dark">View Site</button>
+                    </div>
+                  </Card>
                 </div>
-              </Card>
+                <div className="col-12 col-md-4">
+                  <Card>
+                    <img src="" alt="" />
+                  </Card>
+                </div>
+                <div className="col-12 col-md-4">
+                  <Card>
+                    <img src="" alt="" />
+                  </Card>
+                </div>
+              </div>
             </div>
           </div>
         </div>
